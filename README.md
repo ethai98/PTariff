@@ -4,9 +4,11 @@ To access raw trade agreement tariff schedule data, download the zip file from h
 
 **Challenge:** My dissertation requires tariff-line treatment from international trade agreements. However, there is no clean, on-the-shelf database that codes individual tariff lines from trade agreements. Collaborating with Elisabeth Van Lieshout, we created an end-to-end data pipeline that extracts tariff schedules in thousands of pages of non-standardized PDFs, manually codes each staging category according to the legal text, and merges country-level and product-level information together into a unified database that we call _PTariff_. 
 
+**Accomplishment:** By extracting tabular data using Tabula-py, we saved thousands of dollars and hundreds of hours by avoiding the need to hire an OCR company to complete a critical step in the process. 
+
 Generally, the steps are as follows:
 
-PDF → Tabula & Clean → CSV → Meta Data → Manual Coding of Staging Categories → Unified CSV. 
+PDF → Tabula & Clean → CSV → Meta Data → Manual Coding of Staging Categories → Unified Dataset. 
 
 ## Extraction
 1. (PTariff/code/1 tabula.ipynb): Utilizes the Tabula-py library to programmatically identify and extract tabular data from PDF schedules.
